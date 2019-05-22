@@ -14,8 +14,9 @@ yarn run serve
 See [项目地址](https://wuxianqiang.github.io/admin/).
 
 ### 主要功能
+
 1. 登录验证
-1. 手写组件
+1. 过度动画
 2. 路由权限
 3. axios封装
 4. express后台
@@ -33,8 +34,9 @@ See [项目地址](https://wuxianqiang.github.io/admin/).
 14. 日历组件
 15. 打印组件
 16. 复制组件
-17. 手写vue插件
 18. 弹窗组件
 19. 信息提示组件
 20. 轮播图组件
 21. vue动画
+22. 表单组件
+23. 选择框组件

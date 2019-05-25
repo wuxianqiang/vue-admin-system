@@ -47,11 +47,11 @@ export default {
 }
 .item {
   padding: 0 20px;
-  width: 100%;
   box-sizing: border-box;
   line-height: 34px;
   cursor: pointer;
   background: #fff;
+  white-space: nowrap;
 }
 .hover {
   background: #f5f7fa;

@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+    <!-- <div class="title">44</div> -->
     <base-select v-model="value">
       <base-option
         v-for="(item, index) in options"
@@ -8,12 +9,26 @@
         :value="item.value">
       </base-option>
     </base-select>
-
+    <!-- <el-select v-model="value" placeholder="请选择">
+      <el-option
+        v-for="item in options"
+        :key="item.value"
+        :label="item.label"
+        :value="item.value">
+      </el-option>
+    </el-select>
+    <div class="title">44</div> -->
     <base-input v-model="msg" placeholder="请输入姓名" :replace="/\D/g">
       <i slot="prefix" class="el-icon-date"></i>
     </base-input>
 
     <base-switch v-model="input" active-color="#13ce66"></base-switch>
+    <base-button type="primary">保存</base-button>
+    <base-button type="success">保存</base-button>
+    <base-button type="info">保存</base-button>
+    <base-button type="warning">保存</base-button>
+    <base-button type="danger">保存</base-button>
+    <base-button type="danger">保存</base-button>
     <!-- <base-collapse-wrapper>
       <base-collapse title="选项1">
         <div>
@@ -38,6 +53,7 @@ import BaseCollapse from '@/components/baseCollapse/baseCollapse'
 import BaseCollapseWrapper from '@/components/baseCollapse/baseCollapseWrapper'
 import BaseInput from '@/components/baseInput/baseInput'
 import BaseSwitch from '@/components/baseSwitch/baseSwitch'
+import BaseButton from '@/components/baseButton/baseButton'
 
 export default {
   components: {
@@ -46,7 +62,8 @@ export default {
     BaseCollapse,
     BaseCollapseWrapper,
     BaseInput,
-    BaseSwitch
+    BaseSwitch,
+    BaseButton
   },
   data () {
     return {
@@ -62,9 +79,6 @@ export default {
       }, {
         value: '选项4',
         label: '龙须面'
-      }, {
-        value: '选项5',
-        label: '北京烤鸭'
       }],
       value: '选项5',
       msg: '',
@@ -83,5 +97,10 @@ export default {
 .about-title {
   line-height: 36px;
   font-size: 18px;
+}
+.title {
+  height: 500px;
+  background: pink;
+  width: 100%;
 }
 </style>
